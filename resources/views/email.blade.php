@@ -1,0 +1,1 @@
+ACesta este emailul {{ $nume }}
