@@ -24,7 +24,8 @@ Route::get('/blog/{category?}', [BlogController::class, 'index']);
 Route::get('/blog/{category?}/{id?}', [BlogController::class, 'show']);
 
 
-Route::get('/contact', [FormController::class, 'contact']);
+//Route::get('/contact', [FormController::class, 'contact']);
+Route::get('/contact', 'FormController@contact');
 Route::post('/contact', [FormController::class, 'postcontact']);
 
 
